@@ -25,12 +25,12 @@ public class AopApplication {
         System.out.println("demoTheBeforeAdvice");
         accountDao.addAccount();
         System.out.println("Call it again!!");
-        accountDao.addAccount();
+        accountDao.addSecondAccount();
 
 
         memberShipDAO.addAccount();
         System.out.println("Call it again!!");
-        memberShipDAO.addAccount();
+        memberShipDAO.addMembership();
     }
 
 }

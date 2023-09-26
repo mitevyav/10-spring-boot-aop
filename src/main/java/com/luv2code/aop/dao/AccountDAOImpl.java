@@ -8,4 +8,9 @@ public class AccountDAOImpl implements AccountDAO {
     public void addAccount() {
         System.out.println(getClass() + "   ADD ACCOUNT");
     }
+
+    @Override
+    public void addSecondAccount() {
+        System.out.println(getClass() + "   ADD SECOND ACCOUNT");
+    }
 }
