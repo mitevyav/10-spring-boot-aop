@@ -4,5 +4,5 @@ public interface AccountDAO {
 
     void addAccount();
 
-    void addSecondAccount();
+    boolean addSecondAccount();
 }

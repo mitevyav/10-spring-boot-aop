@@ -22,14 +22,9 @@ public class AopApplication {
     }
 
     private void demoTheBeforeAdvice(AccountDAO accountDao, MembershipDAO memberShipDAO) {
-        System.out.println("demoTheBeforeAdvice");
         accountDao.addAccount();
-        System.out.println("Call it again!!");
         accountDao.addSecondAccount();
-
-
         memberShipDAO.addAccount();
-        System.out.println("Call it again!!");
         memberShipDAO.addMembership();
     }
 
