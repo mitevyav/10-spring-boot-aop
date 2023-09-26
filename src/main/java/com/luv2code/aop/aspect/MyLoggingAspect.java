@@ -10,6 +10,6 @@ public class MyLoggingAspect {
 
     @Before("execution(public void addAccount())")
     public void beforeAddAccountAdvice() {
-        System.out.println("BEFORE execution of addAccount() inside: " + getClass());
+        System.out.println("\n======>>> BEFORE execution of addAccount() inside: " + getClass());
     }
 }
