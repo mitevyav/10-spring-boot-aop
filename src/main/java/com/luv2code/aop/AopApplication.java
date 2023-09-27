@@ -2,6 +2,7 @@ package com.luv2code.aop;
 
 import com.luv2code.aop.dao.AccountDAO;
 import com.luv2code.aop.dao.MembershipDAO;
+import com.luv2code.aop.entity.Account;
 import org.springframework.boot.CommandLineRunner;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
@@ -22,7 +23,7 @@ public class AopApplication {
     }
 
     private void demoTheBeforeAdvice(AccountDAO accountDao, MembershipDAO memberShipDAO) {
-        accountDao.addAccount();
+        accountDao.addAccount(new Account());
         accountDao.addSecondAccount();
         memberShipDAO.addAccount();
         memberShipDAO.addMembership();
