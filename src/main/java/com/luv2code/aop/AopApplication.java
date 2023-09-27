@@ -23,8 +23,8 @@ public class AopApplication {
     }
 
     private void demoTheBeforeAdvice(AccountDAO accountDao, MembershipDAO memberShipDAO) {
-        accountDao.addAccount(new Account());
-        accountDao.addSecondAccount();
+        accountDao.addAccount(new Account(), true);
+        accountDao.addSecondAccount(new Account());
         memberShipDAO.addAccount();
         memberShipDAO.addMembership();
     }

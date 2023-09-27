@@ -4,7 +4,7 @@ import com.luv2code.aop.entity.Account;
 
 public interface AccountDAO {
 
-    void addAccount(Account account);
+    void addAccount(Account account, boolean vipFlag);
 
-    boolean addSecondAccount();
+    boolean addSecondAccount(Account account);
 }
