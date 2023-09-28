@@ -29,10 +29,15 @@ public class AopApplication {
     private void demoTheBeforeAdvice(AccountDAO accountDao, MembershipDAO memberShipDAO, AccountDAO2 accountDAO2) {
         accountDao.addAccount(new Account(), true);
         accountDao.addSecondAccount(new Account());
+
+        accountDao.setName("Frodo");
+        accountDao.getName();
+        accountDao.setServiceCode("silver");
+        accountDao.getServiceCode();
+
+
         memberShipDAO.addAccount();
         memberShipDAO.addMembership();
-        accountDAO2.addAccount2(new Account(), true);
-        accountDAO2.addSecondAccount2(new Account());
     }
 
 }

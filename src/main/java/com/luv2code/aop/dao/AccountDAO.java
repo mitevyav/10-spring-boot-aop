@@ -7,4 +7,15 @@ public interface AccountDAO {
     void addAccount(Account account, boolean vipFlag);
 
     boolean addSecondAccount(Account account);
+
+
+    String getName();
+
+
+    void setName(String name);
+
+
+    String getServiceCode();
+
+    void setServiceCode(String serviceCode);
 }
