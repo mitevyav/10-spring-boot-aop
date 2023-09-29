@@ -27,7 +27,10 @@ public class AopApplication {
     }
 
     private void demoTheBeforeAdvice(AccountDAO accountDao, MembershipDAO memberShipDAO, AccountDAO2 accountDAO2) {
-        accountDao.addAccount(new Account(), true);
+        Account account = new Account();
+        account.setName("Frodo");
+        account.setLevel("Ring bearer");
+        accountDao.addAccount(account, true);
         accountDao.addSecondAccount(new Account());
 
         accountDao.setName("Frodo");
